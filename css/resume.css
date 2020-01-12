@@ -56,13 +56,13 @@ p.lead {
 
 .social-icons a {
   display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 4rem;
+  width: 4rem;
   background-color: #495057;
   color: #fff !important;
   border-radius: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 3.5rem;
   margin-right: 1rem;
 }
@@ -114,12 +114,11 @@ p.lead {
     display: -ms-flexbox;
     display: flex;
     margin: auto auto 0;
-    padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    max-width: 15rem;
+    max-height: 15rem;
+    border: 0.2rem solid rgba(255, 255, 255, 1);
   }
   #sideNav .navbar-collapse {
     display: -webkit-box;
@@ -164,7 +163,7 @@ section.resume-section .resume-item .resume-date {
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
+    min-width: 25rem;
   }
 }
 
@@ -176,15 +175,15 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #939393 !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #939393 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #939393;
 }
 
 a:hover, a:focus, a:active {
