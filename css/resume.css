@@ -189,3 +189,60 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+/* Four column layout */
+.side {
+  float: left;
+  width: 20%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 25%;
+  padding-right: 5px
+}
+
+/* Place text to the right */
+.right {
+  text-align: left;
+  width: 5%;
+  margin-top:10px;
+  padding-left: 10px;
+  padding-right: 10px
+}
+
+.level {
+  text-align: left;
+  width: 50%;
+  margin-top:10px;
+  padding-left: 30px
+}
+
+@media (min-width: 768px) {
+  section.side section.right section.level {
+    min-height: 100vh;
+  }
+  section.middle {
+    min-width: 15rem;
+  }
+}
+
+/* The bar container */
+.bar-container {
+width: 100%;
+background-color: #f1f1f1;
+text-align: center;
+color: white;
+}
+
+/* Individual bars */
+.linux-bar-1 {width: 80%; height: 18px; background-color: #4CAF50;}
+.python-bar-2 {width: 80%; height: 18px; background-color: #2196F3;}
+.oodesign-bar-3 {width: 70%; height: 18px; background-color: #00bcd4;}
+.pandas-bar-4 {width: 80%; height: 18px; background-color: #ff9800;}
+.devops-bar-5 {width: 80%; height: 18px; background-color: #f44336;}
+.git-bar-6 {width: 90%; height: 18px; background-color: #4cF336;}
+.docker-bar-7 {width: 60%; height: 18px; background-color: #f44336;}
+.js-bar-8 {width: 40%; height: 18px; background-color: #2190AD;}
