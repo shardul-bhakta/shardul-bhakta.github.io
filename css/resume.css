@@ -163,7 +163,7 @@ section.resume-section .resume-item .resume-date {
     min-height: 100vh;
   }
   section.resume-section .resume-item .resume-date {
-    min-width: 25rem;
+    min-width: 15rem;
   }
 }
 
@@ -175,15 +175,15 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #939393 !important;
+  background-color: #008b8b !important;
 }
 
 .text-primary {
-  color: #939393 !important;
+  color: #008b8b !important;
 }
 
 a {
-  color: #939393;
+  color: #008b8b;
 }
 
 a:hover, a:focus, a:active {
