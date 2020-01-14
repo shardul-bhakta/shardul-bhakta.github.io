@@ -190,17 +190,20 @@ a:hover, a:focus, a:active {
   color: #824027;
 }
 
+/* This is all for skills section */
 /* Four column layout */
+
 .side {
   float: left;
   width: 20%;
   margin-top:10px;
+  padding-left: 1rem
 }
 
 .middle {
   margin-top:10px;
   float: left;
-  width: 25%;
+  width: 50%;
   padding-right: 5px
 }
 
@@ -215,18 +218,9 @@ a:hover, a:focus, a:active {
 
 .level {
   text-align: left;
-  width: 50%;
+  width: 25%;
   margin-top:10px;
   padding-left: 30px
-}
-
-@media (min-width: 768px) {
-  section.side section.right section.level {
-    min-height: 100vh;
-  }
-  section.middle {
-    min-width: 15rem;
-  }
 }
 
 /* The bar container */
@@ -246,3 +240,13 @@ color: white;
 .git-bar-6 {width: 90%; height: 18px; background-color: #4cF336;}
 .docker-bar-7 {width: 60%; height: 18px; background-color: #f44336;}
 .js-bar-8 {width: 40%; height: 18px; background-color: #2190AD;}
+
+@media screen and (max-width: 500px) {
+  .side .right {
+    width: 50%;
+  }
+  .middle .level .bar-container {
+    display: none;
+  }
+  }
+}
