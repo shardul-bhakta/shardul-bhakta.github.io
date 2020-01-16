@@ -116,8 +116,8 @@ p.lead {
     margin: auto auto 0;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 15rem;
-    max-height: 15rem;
+    max-width: 12rem;
+    max-height: 12rem;
     border: 0.2rem solid rgba(255, 255, 255, 1);
   }
   #sideNav .navbar-collapse {
@@ -203,7 +203,7 @@ a:hover, a:focus, a:active {
 .middle {
   margin-top:10px;
   float: left;
-  width: 50%;
+  width: 30%;
   padding-right: 5px
 }
 
@@ -218,7 +218,7 @@ a:hover, a:focus, a:active {
 
 .level {
   text-align: left;
-  width: 25%;
+  width: 45%;
   margin-top:10px;
   padding-left: 30px
 }
@@ -232,21 +232,54 @@ color: white;
 }
 
 /* Individual bars */
-.linux-bar-1 {width: 80%; height: 18px; background-color: #4CAF50;}
-.python-bar-2 {width: 80%; height: 18px; background-color: #2196F3;}
-.oodesign-bar-3 {width: 70%; height: 18px; background-color: #00bcd4;}
-.pandas-bar-4 {width: 80%; height: 18px; background-color: #ff9800;}
-.devops-bar-5 {width: 80%; height: 18px; background-color: #f44336;}
-.git-bar-6 {width: 90%; height: 18px; background-color: #4cF336;}
-.docker-bar-7 {width: 60%; height: 18px; background-color: #f44336;}
-.js-bar-8 {width: 40%; height: 18px; background-color: #2190AD;}
+.linux-bar-1 {width: 80%; height: 18px; background-color: #008b8b;}
+.python-bar-2 {width: 80%; height: 18px; background-color: #008b8b;}
+.oodesign-bar-3 {width: 70%; height: 18px; background-color: #008b8b;}
+.pandas-bar-4 {width: 80%; height: 18px; background-color: #008b8b;}
+.devops-bar-5 {width: 80%; height: 18px; background-color: #008b8b;}
+.git-bar-6 {width: 90%; height: 18px; background-color: #008b8b;}
+.docker-bar-7 {width: 60%; height: 18px; background-color: #008b8b;}
+.js-bar-8 {width: 40%; height: 18px; background-color: #008b8b;}
 
-@media screen and (max-width: 500px) {
-  .side .right {
-    width: 50%;
+@media only screen and (max-width: 480px) {
+  .side {
+    width: 100%;
   }
-  .middle .level .bar-container {
+  .middle {
+    padding-left: 1rem;
+    width: 60%;
+  }
+  .right {
+    width: 40%;
+  }
+  .level {
     display: none;
   }
-  }
+}
+
+a[data-tool-tip]{
+    position: relative;
+}
+
+a[data-tool-tip]::after{
+    content: attr(data-tool-tip);
+    display: flex;
+    position: absolute;
+    background-color: gray;
+    padding: 1em 3em;
+    color: white;
+    border-radius: 5px;
+    font-size: .6em;
+    bottom: 0;
+    left: -180%;
+    white-space: nowrap;
+    transform: scale(0);
+    transition:
+    transform ease-out 150ms,
+    bottom ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after{
+    transform: scale(0.5);
+    bottom: 80%;
 }
