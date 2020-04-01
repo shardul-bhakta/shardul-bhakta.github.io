@@ -232,14 +232,12 @@ color: white;
 }
 
 /* Individual bars */
-.linux-bar-1 {width: 80%; height: 18px; background-color: #008b8b;}
-.python-bar-2 {width: 80%; height: 18px; background-color: #008b8b;}
-.oodesign-bar-3 {width: 70%; height: 18px; background-color: #008b8b;}
-.pandas-bar-4 {width: 80%; height: 18px; background-color: #008b8b;}
-.devops-bar-5 {width: 80%; height: 18px; background-color: #008b8b;}
-.git-bar-6 {width: 90%; height: 18px; background-color: #008b8b;}
-.docker-bar-7 {width: 60%; height: 18px; background-color: #008b8b;}
-.js-bar-8 {width: 40%; height: 18px; background-color: #008b8b;}
+.one-bar {width: 20%; height: 18px; background-color: #008b8b;}
+.two-bar {width: 40%; height: 18px; background-color: #008b8b;}
+.three-bar {width: 60%; height: 18px; background-color: #008b8b;}
+.three-and-half-bar {width: 70%; height: 18px; background-color: #008b8b;}
+.four-bar {width: 80%; height: 18px; background-color: #008b8b;}
+.four-and-half-bar {width: 90%; height: 18px; background-color: #008b8b;}
 
 @media only screen and (max-width: 480px) {
   .side {
